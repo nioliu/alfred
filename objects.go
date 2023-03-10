@@ -1,7 +1,8 @@
 package util
 
 type Result struct {
-	Items []*Item `json:"items"`
+	Items     []*Item           `json:"items"`
+	Variables map[string]string `json:"variables"`
 }
 
 type Item struct {
