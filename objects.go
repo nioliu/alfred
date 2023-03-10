@@ -26,3 +26,12 @@ type Icon struct {
 	Type string `json:"type"`
 	Path string `json:"path"`
 }
+
+type AlfredWorkflowRsp struct {
+	AlfredWorkflow *AlfredWorkflow `json:"alfredworkflow"`
+}
+
+type AlfredWorkflow struct {
+	Arg       string            `json:"arg"`
+	Variables map[string]string `json:"variables"`
+}
